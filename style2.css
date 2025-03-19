@@ -1,23 +1,22 @@
 /* style2.css */
 
-/* Center the content container */
+/* Center the container */
+.content {
+  max-width: 800px;   /* Control the width of the text area */
+  margin: 0 auto;     /* Center the container on the page */
+  text-align: left;   /* Force left alignment for all text within the container */
+  padding: 0 20px;    /* Optional: padding for better spacing on small screens */
+}
+
+/* Optionally, adjust global font size if desired */
 body {
-  font-size: 18px; /* slightly bigger font */
-  margin: 0 auto;
-  max-width: 1200px; /* controls overall content width */
-  padding: 0 20px;  /* optional padding for small screens */
+  font-size: 18px;    /* Slightly bigger font */
 }
 
-/* Center headings */
+/* If you want headings to be centered separately, you can do so */
 h1, h2, h3, h4, h5, h6 {
-  text-align: left;
-}
-
-/* Keep paragraphs left-aligned for optimal readability */
-p {
-  text-align: left;
-  max-width: 800px;  /* controls the line length for paragraphs */
-  margin: 0 auto;    /* centers the paragraph block within the container */
-  line-height: 1.6;
+  /* Remove text-align center if you want headings also left aligned,
+     or use: */
+  /* text-align: center; */ /* Uncomment if you want headings centered */
 }
 

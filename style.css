@@ -1,6 +1,24 @@
-/* Mobile-first styles for the burger menu and sidebar */
+/* style.css */
 
-/* Fixed burger container for mobile */
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* slightly bigger font */
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Burger container: fixed at top-left (mobile only) */
 .burger-container {
   position: fixed;
   top: 10px;
@@ -25,25 +43,24 @@
   transition: all 0.3s ease;
 }
 
-/* Sidebar navigation styling (mobile) */
+/* Sidebar navigation styling (mobile by default) */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px;  /* Hidden off-canvas by default */
+  left: -250px;  /* initially hidden off-canvas */
   width: 250px;
   height: 100%;
   background-color: #2c3e50;
   overflow-y: auto;
   transition: left 0.3s ease;
   z-index: 1000;
-  padding-top: 60px; /* Adjust to leave space for the burger menu */
+  padding-top: 60px;
 }
 
 .sidebar.active {
   left: 0;
 }
 
-/* Sidebar navigation links (mobile) */
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -62,7 +79,7 @@
   font-size: 1.1em;
 }
 
-/* Overlay for mobile */
+/* Overlay styling (mobile only) */
 .overlay {
   position: fixed;
   top: 0;
@@ -81,37 +98,51 @@
   visibility: visible;
 }
 
-/* Styles for wider (non-mobile) screens */
+/* Content container styling */
+.content {
+  max-width: 800px;   /* control the width of the content area */
+  margin: 0 auto;     /* center the container */
+  text-align: left;   /* ensure text is left-aligned */
+  padding: 20px;
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ----- Desktop Navigation Styles ----- */
 @media (min-width: 601px) {
-  /* Hide burger menu and overlay on larger screens */
+  /* Hide mobile-specific elements */
   .burger-container,
   .overlay {
     display: none;
   }
 
-  /* Sidebar becomes a static horizontal menu */
+  /* Show the sidebar as a static horizontal nav bar */
   .sidebar {
-    position: relative;
+    position: relative; /* Not fixed */
     left: 0;
-    width: auto;
+    width: 100%;
     height: auto;
-    background-color: transparent;
-    padding: 0;
+    background-color: #2c3e50; /* Retain the navbar color */
+    padding: 1em 0;
   }
   
   .sidebar ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   
   .sidebar ul li {
-    padding: 0;
     margin: 0 15px;
     border: none;
+    padding: 0;
   }
   
   .sidebar ul li a {
-    color: #2c3e50;
+    color: #ecf0f1;
     font-size: 1.1em;
   }
 }

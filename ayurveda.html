@@ -2,81 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Ensures proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayurveda - आयुर्वेद</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="ayurveda.css">
 </head>
 <body>
-  <!-- Placeholder for the nav bar -->
+  <!-- Placeholder for the nav bar (loaded dynamically via nav.js) -->
   <div id="nav-placeholder"></div>
 
   <!-- Main content container -->
   <div class="content">
     <h1>Ayurveda - आयुर्वेद</h1>
+    
     <p>
       Ayurveda is the ancient Indian system of medicine that focuses on holistic healing, balance, and natural remedies.<br>
       आयुर्वेद प्राचीन भारतीय चिकित्सा पद्धति है, जो समग्र उपचार, संतुलन, और प्राकृतिक उपायों पर आधारित है।
     </p>
-    <h2>Common Principles / सामान्य सिद्धांत</h2>
-    <ul>
-      <li>
-        <strong>Rasayana (Rejuvenation / रसायन):</strong>  
-        The concept of rejuvenation to promote longevity and vitality.<br>
-        दीर्घायु और ताजगी के लिए पुनरुद्धार की अवधारणा।
-      </li>
-      <li>
-        <strong>Panchakarma (Detoxification / पंचकर्म):</strong>  
-        The five methods to detoxify and cleanse the body.<br>
-        शरीर को विषमुक्त करने के लिए पाँच प्रक्रियाएँ।
-      </li>
-      <li>
-        <strong>Herbal Remedies (जड़ी बूटी):</strong>  
-        Use of natural herbs to heal and prevent diseases.<br>
-        रोगों के उपचार और रोकथाम के लिए प्राकृतिक जड़ी-बूटियों का उपयोग।
-      </li>
-      <li>
-        <strong>Intake Methods / सेवन के तरीके:</strong>  
-        Various methods such as decoctions (काढ़ा), powders (चूर्ण), and oils (तेल).<br>
-        जैसे कि काढ़ा, चूर्ण, और तेल के माध्यम से।
-      </li>
-      <li>
-        <strong>Philosophy of Life / जीवन का दर्शन:</strong>  
-        Emphasizes the sanctity of life; hence, abortion techniques are generally not part of traditional Ayurvedic practice.<br>
-        जीवन की पवित्रता पर जोर दिया जाता है, इसलिए गर्भपात जैसी विधियाँ पारंपरिक आयुर्वेद में शामिल नहीं हैं।
-      </li>
-    </ul>
-    <h2>Sanskrit Ayurvedic Texts / संस्कृत आयुर्वेद ग्रन्थ</h2>
-    <p>
-      Below is a list of classical Ayurvedic texts that detail these principles. Click on each text to read more in-depth information from the dedicated pages (located inside the <code>ayurveda</code> folder).<br>
-      नीचे उन प्राचीन आयुर्वेद ग्रन्थों की सूची दी गई है, जो इन सिद्धांतों का विस्तार से वर्णन करते हैं। अधिक जानकारी के लिए संबंधित ग्रन्थ पर क्लिक करें (जो <code>ayurveda</code> फोल्डर में उपलब्ध हैं)।
-    </p>
-    <ul>
-      <li>
-        <a href="ayurveda/charaka.html">Charaka Samhita (चरक संहिता)</a> - A foundational text on internal medicine, diagnostics, and rejuvenation.<br>
-        आंतरिक चिकित्सा, निदान और रसायन पर आधारित एक मूल ग्रन्थ।
-      </li>
-      <li>
-        <a href="ayurveda/sushruta.html">Sushruta Samhita (सुश्रुत संहिता)</a> - Renowned for its surgical techniques and detailed anatomical insights.<br>
-        शल्य चिकित्सा तकनीकों और विस्तृत शारीरिक संरचनाओं के लिए प्रसिद्ध।
-      </li>
-      <li>
-        <a href="ayurveda/ashtanga.html">Ashtanga Hridayam (अष्टांग हृदयम्)</a> - Combines theory and practice to explain the holistic approach of Ayurveda.<br>
-        सिद्धांत और व्यावहारिकता का समावेश कर आयुर्वेद के समग्र दृष्टिकोण को समझाता है।
-      </li>
-      <li>
-        <a href="ayurveda/ashtanga-sangraha.html">Ashtanga Sangraha (अष्टांग संग्रह)</a> - A concise compilation of Ayurvedic practices and principles.<br>
-        आयुर्वेदिक प्रथाओं और सिद्धांतों का संक्षिप्त संकलन।
-      </li>
-    </ul>
-    <p>
-      For further exploration of these texts and topics, please click on the links above.<br>
-      इन ग्रन्थों और विषयों की विस्तृत जानकारी के लिए ऊपर दिए गए लिंक पर क्लिक करें।
-    </p>
+    
+    <section class="introduction">
+      <h2>Introduction / परिचय</h2>
+      <p>
+        Originating thousands of years ago, Ayurveda is deeply rooted in the philosophical and cultural heritage of India. Its practices have been handed down through generations to guide us in maintaining robust health and well-being.<br>
+        हजारों वर्ष पूर्व उत्पन्न, आयुर्वेद भारत की दार्शनिक एवं सांस्कृतिक विरासत में गहराई से निहित है। इसकी प्रथाएँ पीढ़ियों से संचरित होकर हमें उत्तम स्वास्थ्य एवं कल्याण के पथ पर अग्रसर करती हैं।
+      </p>
+    </section>
+    
+    <section class="principles">
+      <h2>Common Principles / सामान्य सिद्धांत</h2>
+      <ul>
+        <li>
+          <strong>Rasayana (Rejuvenation / रसायन):</strong>  
+          The concept of rejuvenation to promote longevity and vitality.<br>
+          दीर्घायु एवं ताजगी हेतु पुनरुद्धार की अवधारणा।
+        </li>
+        <li>
+          <strong>Panchakarma (Detoxification / पंचकर्म):</strong>  
+          The five methods to detoxify and cleanse the body.<br>
+          शरीर को विषमुक्त करने के लिए पाँच विशिष्ट प्रक्रियाएँ।
+        </li>
+        <li>
+          <strong>Herbal Remedies (जड़ी बूटी):</strong>  
+          The use of natural herbs to heal and prevent ailments.<br>
+          रोग निवारण एवं उपचार हेतु प्राकृतिक जड़ी-बूटियों का उपयोग।
+        </li>
+        <li>
+          <strong>Intake Methods / सेवन के तरीके:</strong>  
+          Methods such as decoctions (काढ़ा), powders (चूर्ण), and oils (तेल).<br>
+          काढ़ा, चूर्ण तथा तेल के माध्यम से।
+        </li>
+        <li>
+          <strong>Philosophy of Life / जीवन का दर्शन:</strong>  
+          Emphasizes the sanctity of life; hence, certain practices like abortion are not advocated in traditional Ayurveda.<br>
+          जीवन की पवित्रता पर जोर, अतः पारंपरिक आयुर्वेद में गर्भपात जैसी विधियाँ निहित नहीं।
+        </li>
+      </ul>
+    </section>
+    
+    <section class="texts">
+      <h2>Sanskrit Ayurvedic Texts / संस्कृत आयुर्वेद ग्रन्थ</h2>
+      <p>
+        Below is a list of classical Ayurvedic texts that delve into these principles. Click on each to explore detailed expositions on their teachings.<br>
+        नीचे प्राचीन आयुर्वेद ग्रन्थों की सूची है, जो इन सिद्धांतों का विशद वर्णन करते हैं। विस्तृत ज्ञान हेतु संबंधित ग्रन्थ पर क्लिक करें।
+      </p>
+      <ul>
+        <li>
+          <a href="ayurveda/charaka.html">Charaka Samhita (चरक संहिता)</a> - A foundational text on internal medicine, diagnostics, and rejuvenation.<br>
+          आंतरिक चिकित्सा, निदान एवं रसायन का मूल ग्रन्थ।
+        </li>
+        <li>
+          <a href="ayurveda/sushruta.html">Sushruta Samhita (सुश्रुत संहिता)</a> - Renowned for its surgical techniques and anatomical insights.<br>
+          शल्य चिकित्सा तकनीक एवं शारीरिक संरचना का विवरण।
+        </li>
+        <li>
+          <a href="ayurveda/ashtanga.html">Ashtanga Hridayam (अष्टांग हृदयम्)</a> - Merges theory and practice to elucidate Ayurveda’s holistic approach.<br>
+          सिद्धांत एवं व्यावहारिकता के संगम द्वारा समग्र दृष्टिकोण का स्पष्टीकरण।
+        </li>
+        <li>
+          <a href="ayurveda/ashtanga-sangraha.html">Ashtanga Sangraha (अष्टांग संग्रह)</a> - A concise compilation of Ayurvedic practices and theories.<br>
+          आयुर्वेदिक प्रथाओं एवं सिद्धांतों का संक्षिप्त संकलन।
+        </li>
+      </ul>
+    </section>
+    
+    <section class="history">
+      <h2>Historical Significance / ऐतिहासिक महत्त्व</h2>
+      <p>
+        Ayurveda has been an integral part of Indian culture and has profoundly influenced art, literature, and everyday life. It is not merely a system of medicine but a way of living that emphasizes harmony between the body, mind, and nature.<br>
+        आयुर्वेद भारतीय संस्कृति का अभिन्न अंग रहा है एवं कला, साहित्य तथा दैनिक जीवन पर गहरा प्रभाव डाला है। यह केवल चिकित्सा पद्धति नहीं, बल्कि एक जीवनशैली है, जो शरीर, मन एवं प्रकृति के बीच संतुलन पर बल देती है।
+      </p>
+    </section>
+    
+    <section class="modern">
+      <h2>Modern Relevance / आधुनिक प्रासंगिकता</h2>
+      <p>
+        In contemporary times, Ayurveda is experiencing a renaissance as more people embrace its natural and preventive approaches. Modern research increasingly validates many of its principles, bridging ancient wisdom with current scientific inquiry.<br>
+        आधुनिक युग में, प्राकृतिक एवं रोकथाम संबंधी उपायों के प्रति बढ़ते रुझान से आयुर्वेद का पुनरुत्थान हो रहा है। आधुनिक अनुसंधान इसके सिद्धांतों की पुष्टि करते हुए प्राचीन ज्ञान एवं वर्तमान विज्ञान के बीच सेतु का निर्माण कर रहा है।
+      </p>
+    </section>
+    
+    <section class="further">
+      <h2>Further Exploration / आगे की खोज</h2>
+      <p>
+        To delve deeper into the realm of Ayurveda, we invite you to explore the detailed expositions provided in each classical text linked above. Embrace a journey that enriches both the body and the spirit through time-honored practices and insights.<br>
+        आयुर्वेद के विस्तृत ज्ञान में उतरने हेतु, कृपया ऊपर दिए गए ग्रन्थों के विस्तृत विवेचन का अन्वेषण करें। यह यात्रा न केवल शरीर बल्कि आत्मा को भी समृद्ध करती है, पारंपरिक उपायों एवं दृष्टिकोण के माध्यम से।
+      </p>
+    </section>
   </div>
 
-    <!-- Load external script for navigation -->
+  <!-- Load external script for navigation -->
   <script src="nav.js"></script>
 </body>
 </html>
-

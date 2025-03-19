@@ -1,0 +1,23 @@
+/* index.css */
+
+/* Styling for the introduction section */
+.intro {
+    margin-top: 40px;           /* Adds vertical space at the top */
+    margin-bottom: 30px;        /* Space below the intro */
+    padding: 20px;
+    background-color: #e8f4fa;  /* Soft background color for contrast */
+    border: 1px solid #b0c4de;  /* Light border for definition */
+    border-radius: 8px;         /* Rounded corners */
+    font-family: 'Georgia', serif; /* A classic serif font */
+    line-height: 1.6;
+  }
+  
+  .intro p {
+    margin-bottom: 20px;        /* Space between paragraphs */
+  }
+  
+  /* Emphasize the introduction headings */
+  .intro strong {
+    color: #2c3e50;
+  }
+  

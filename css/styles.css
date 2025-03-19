@@ -1,0 +1,41 @@
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  background-color: #ccc;
+}
+
+/* Dropdown menu (Purushartha) */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 36px; /* The height of the main nav li */
+  left: 0;
+  background-color: #eee;
+}
+
+nav li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  width: 150px;
+}
+

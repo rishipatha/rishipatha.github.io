@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Nav Example</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Navigation</title>
 </head>
 <body>
   <nav>
@@ -14,7 +13,7 @@
       <span></span>
     </div>
 
-    <!-- Navigation Links: will display differently based on screen size -->
+    <!-- Navigation Links -->
     <ul id="nav-list">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/ayurveda.html">Ayurveda</a></li>
@@ -31,12 +30,15 @@
     document.addEventListener("DOMContentLoaded", function() {
       const burger = document.getElementById('burger-menu');
       const navList = document.getElementById('nav-list');
-      burger.addEventListener('click', function(){
+      
+      function toggleNav(e) {
+        e.preventDefault();
         navList.classList.toggle('active');
-      });
+      }
+      
+      burger.addEventListener('click', toggleNav);
+      burger.addEventListener('touchstart', toggleNav);
     });
   </script>
 </body>
 </html>
-
-

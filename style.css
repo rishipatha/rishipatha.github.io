@@ -23,7 +23,7 @@ nav {
   background-color: #2c3e50;
   padding: 1em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; /* needed for absolute positioning of mobile menu */
+  position: relative; /* Needed for absolute positioning of mobile menu */
 }
 
 /* Desktop Navigation Links */
@@ -81,7 +81,7 @@ nav ul li a:focus {
     text-align: center;
     background-color: #2c3e50;
     position: absolute;
-    top: 60px; /* adjust as needed based on nav height */
+    top: 60px; /* Adjust based on nav height */
     left: 0;
     padding: 1em 0;
   }
@@ -102,9 +102,9 @@ nav ul li a:focus {
 
 /* Content container styling */
 .content {
-  max-width: 800px;   /* control the width of the content area */
-  margin: 0 auto;     /* center the container */
-  text-align: left;   /* ensure text is left-aligned */
+  max-width: 800px;   /* Control the width of the content area */
+  margin: 0 auto;     /* Center the container */
+  text-align: left;   /* Ensure text is left-aligned */
   padding: 20px;
 }
 

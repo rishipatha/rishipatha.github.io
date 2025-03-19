@@ -1,23 +1,23 @@
 /* style2.css */
 
-/* Increase the overall font size */
+/* Center the content container */
 body {
   font-size: 18px; /* slightly bigger font */
-  text-align: center; /* centers inline elements/text in the body */
   margin: 0 auto;
-  max-width: 1200px; /* optional: limits the width of the content */
+  max-width: 1200px; /* controls overall content width */
+  padding: 0 20px;  /* optional padding for small screens */
 }
 
-/* Center and justify paragraphs */
-p {
-  text-align: justify; /* justify text for better readability */
-  max-width: 800px; /* control the line length */
-  margin: 0 auto; /* center the paragraph block */
-  line-height: 1.6;
-}
-
-/* If you want headings centered */
+/* Center headings */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+}
+
+/* Keep paragraphs left-aligned for optimal readability */
+p {
+  text-align: left;
+  max-width: 800px;  /* controls the line length for paragraphs */
+  margin: 0 auto;    /* centers the paragraph block within the container */
+  line-height: 1.6;
 }
 

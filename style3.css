@@ -1,0 +1,23 @@
+/* style2.css */
+
+/* Increase the overall font size */
+body {
+  font-size: 18px; /* slightly bigger font */
+  text-align: center; /* centers inline elements/text in the body */
+  margin: 0 auto;
+  max-width: 1200px; /* optional: limits the width of the content */
+}
+
+/* Center and justify paragraphs */
+p {
+  text-align: justify; /* justify text for better readability */
+  max-width: 800px; /* control the line length */
+  margin: 0 auto; /* center the paragraph block */
+  line-height: 1.6;
+}
+
+/* If you want headings centered */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+

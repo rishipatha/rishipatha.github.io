@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Responsive Nav Example</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
-    <ul>
-      <li><a href="https://rishipatha.github.io/index.html">Home</a></li>
-      <li><a href="https://rishipatha.github.io/ayurveda.html">Ayurveda</a></li>
-      <li><a href="https://rishipatha.github.io/yoga.html">Yoga</a></li>
-      <li><a href="https://rishipatha.github.io/science.html">Science</a></li>
-      <li><a href="https://rishipatha.github.io/philosophy.html">Philosophy</a></li>
-      <li><a href="https://rishipatha.github.io/literature.html">Literature</a></li>
-      <li><a href="https://rishipatha.github.io/purushartha.html">Purushartha</a></li>
-      <li><a href="https://rishipatha.github.io/stories.html">Stories</a></li>
+    <!-- Burger menu: visible only on mobile -->
+    <div class="burger-menu" id="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links: will display differently based on screen size -->
+    <ul id="nav-list">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/ayurveda.html">Ayurveda</a></li>
+      <li><a href="/yoga.html">Yoga</a></li>
+      <li><a href="/science.html">Science</a></li>
+      <li><a href="/philosophy.html">Philosophy</a></li>
+      <li><a href="/literature.html">Literature</a></li>
+      <li><a href="/purushartha.html">Purushartha</a></li>
+      <li><a href="/stories.html">Stories</a></li>
     </ul>
   </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const burger = document.getElementById('burger-menu');
+      const navList = document.getElementById('nav-list');
+      burger.addEventListener('click', function(){
+        navList.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
+
 

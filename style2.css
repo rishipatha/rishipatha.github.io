@@ -1,9 +1,9 @@
 /* style2.css */
 
-/* Center the container */
+/* Center the container and add vertical spacing */
 .content {
   max-width: 800px;   /* Control the width of the text area */
-  margin: 0 auto;     /* Center the container on the page */
+  margin: 50px auto 0;  /* 50px top margin, auto left/right, 0 bottom */
   text-align: left;   /* Force left alignment for all text within the container */
   padding: 0 20px;    /* Optional: padding for better spacing on small screens */
 }
@@ -15,8 +15,5 @@ body {
 
 /* If you want headings to be centered separately, you can do so */
 h1, h2, h3, h4, h5, h6 {
-  /* Remove text-align center if you want headings also left aligned,
-     or use: */
-  /* text-align: center; */ /* Uncomment if you want headings centered */
+  /* text-align: center; Uncomment if you want headings centered */
 }
-

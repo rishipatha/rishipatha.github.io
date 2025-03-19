@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <!-- Sidebar navigation (initially hidden off-canvas) -->
+  <!-- Sidebar navigation -->
   <div class="sidebar" id="sidebar">
     <ul id="nav-list">
       <li><a href="/index.html">Home</a></li>
@@ -28,37 +28,7 @@
     </ul>
   </div>
 
-  <!-- Overlay to disable interaction with rest of page -->
+  <!-- Overlay to cover the rest of the screen -->
   <div class="overlay" id="overlay"></div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const burger = document.getElementById('burger-menu');
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('overlay');
-      const burgerContainer = document.getElementById('burger-container');
-
-      function toggleSidebar(e) {
-        e.preventDefault();
-        sidebar.classList.toggle('active');
-        overlay.classList.toggle('active');
-      }
-
-      burger.addEventListener('click', toggleSidebar);
-      burger.addEventListener('touchstart', toggleSidebar);
-
-      // Close sidebar if overlay is clicked
-      overlay.addEventListener('click', toggleSidebar);
-
-      // Fade the burger menu on scroll
-      window.addEventListener('scroll', function() {
-        if(window.scrollY > 50) {
-          burgerContainer.style.opacity = '0.7';
-        } else {
-          burgerContainer.style.opacity = '1';
-        }
-      });
-    });
-  </script>
 </body>
 </html>

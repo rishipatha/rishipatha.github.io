@@ -2,30 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Ensure proper scaling on mobile devices -->
+  <!-- Ensures proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website - Home</title>
-  <!-- Include the main stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation will be loaded here -->
+  <!-- Placeholder where nav.html will be injected -->
   <div id="nav-placeholder"></div>
 
-  <!-- Main content of the page -->
+  <!-- Main content -->
   <div class="content">
     <h1>Welcome to My Website</h1>
     <p>This site explores Ayurveda, Yoga, Science, Philosophy, Literature, Purushartha, and Stories.</p>
   </div>
 
-  <!-- Script to load the navigation from nav.html -->
+  <!-- Load nav.html and attach event listeners -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       fetch("nav.html")
         .then(response => response.text())
         .then(data => {
           document.getElementById("nav-placeholder").innerHTML = data;
-        });
+
+          // Attach event listeners now that nav.html is in the DOM
+          const burger = document.getElementById('burger-menu');
+          const sidebar = document.getElementById('sidebar');
+          const overlay = document.getElementById('overlay');
+          const burgerContainer = document.getElementById('burger-container');
+
+          function toggleSidebar(e) {
+            e.preventDefault();
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+          }
+
+          burger.addEventListener('click', toggleSidebar);
+          burger.addEventListener('touchstart', toggleSidebar);
+          overlay.addEventListener('click', toggleSidebar);
+
+          // Fade the burger menu on scroll
+          window.addEventListener('scroll', function() {
+            if(window.scrollY > 50) {
+              burgerContainer.style.opacity = '0.7';
+            } else {
+              burgerContainer.style.opacity = '1';
+            }
+          });
+        })
+        .catch(error => console.error('Error loading nav:', error));
     });
   </script>
 </body>

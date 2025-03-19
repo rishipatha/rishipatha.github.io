@@ -8,25 +8,21 @@
 <body>
   <!-- Navigation -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ayurveda.html">Ayurveda</a></li>
-        <li><a href="yoga.html">Yoga</a></li>
-        <li><a href="science.html" class="active">Science</a></li>
-        <li><a href="philosophy.html">Philosophy</a></li>
-        <li>
-          <a href="purushartha.html">Purushartha</a>
-          <ul class="dropdown">
-            <li><a href="purushartha/dharma.html">Dharma</a></li>
-            <li><a href="purushartha/artha.html">Artha</a></li>
-            <li><a href="purushartha/kama.html">Kāma</a></li>
-            <li><a href="purushartha/moksha.html">Moksha</a></li>
-          </ul>
-        </li>
-        <li><a href="stories.html">Stories</a></li>
-      </ul>
-    </nav>
+  <!-- 1) Placeholder for navigation -->
+<div id="nav-placeholder"></div>
+
+<!-- 2) JavaScript file that defines loadNavigation() -->
+<script src="js/scripts.js"></script>
+
+<!-- 3) Inline script to call loadNavigation() with the correct path to nav.html -->
+<script>
+  // For pages in the root folder:
+  loadNavigation('nav.html', 'nav-placeholder');
+
+  // OR for pages in a subfolder (e.g., purushartha/dharma.html):
+  // loadNavigation('../nav.html', 'nav-placeholder');
+</script>
+
   </header>
 
   <main>

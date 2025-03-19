@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahabharata</title>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <h1>Mahabharata</h1>
+  <p>The Mahabharata is an epic narrative of the Kuru dynasty, chronicling the great war of Kurukshetra and offering profound insights into duty, ethics, and human nature.</p>
+  <blockquote>"धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।"</blockquote>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("../nav.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
+

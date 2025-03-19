@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhagavad Gita</title>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <h1>Bhagavad Gita</h1>
+  <p>The Bhagavad Gita, part of the Mahabharata, is a conversation between Prince Arjuna and Lord Krishna that discusses duty, righteousness, and the path to liberation.</p>
+  <blockquote>"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।"</blockquote>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("../nav.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
+

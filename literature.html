@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Literature</title>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+  <h1>Literature</h1>
+  <p>This section explores timeless Sanskrit texts that have enriched Indian culture and philosophy.</p>
+  <ul>
+    <li>
+      <a href="literature/Ramayana.html">Ramayana</a> – The epic story of Prince Rama, his exile, and his battle for righteousness.
+      <blockquote>"रामो राजमणिः सत्यवान् पराक्रमः।"</blockquote>
+    </li>
+    <li>
+      <a href="literature/Mahabharata.html">Mahabharata</a> – The vast epic recounting the struggle for sovereignty culminating in the battle of Kurukshetra.
+      <blockquote>"धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।"</blockquote>
+    </li>
+    <li>
+      <a href="literature/BhagavadGita.html">Bhagavad Gita</a> – A philosophical dialogue on duty and righteousness, part of the Mahabharata.
+      <blockquote>"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।"</blockquote>
+    </li>
+  </ul>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch("nav.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    });
+  </script>
+</body>
+</html>
+

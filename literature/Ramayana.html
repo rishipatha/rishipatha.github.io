@@ -2,19 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Website - Home</title>
+  <title>Ramayana</title>
 </head>
 <body>
-  <!-- Placeholder for the nav bar -->
   <div id="nav-placeholder"></div>
-
-  <h1>Welcome to My Website</h1>
-  <p>This site explores Ayurveda, Yoga, Science, Philosophy, Literature, Purushartha, and Stories.</p>
-
-  <!-- Load the nav bar -->
+  <h1>Ramayana</h1>
+  <p>The Ramayana narrates the life of Prince Rama, his exile, the abduction of his wife Sita, and his triumphant return. It is a story of dharma, devotion, and heroism.</p>
+  <blockquote>"रामो राजमणिः सत्यवान् पराक्रमः।"</blockquote>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      fetch("nav.html")
+      fetch("../nav.html")
         .then(response => response.text())
         .then(data => {
           document.getElementById("nav-placeholder").innerHTML = data;

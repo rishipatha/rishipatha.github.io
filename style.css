@@ -1,9 +1,22 @@
+
+/* style.css */
+
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* General body styling */
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* slightly bigger font */
   background-color: #f4f4f4;
   color: #333;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 
 /* Navigation bar styling */
@@ -37,7 +50,82 @@ nav ul li a:focus {
   color: #3498db;
 }
 
-/* Optional: Responsive navigation */
+/* Responsive navigation for mobile devices */
+@media (max-width: 600px) {
+  nav {
+    padding: 1.5em; /* increase padding for touch-friendliness */
+  }
+  nav ul {
+    flex-direction: column; /* stack nav items vertically */
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0; /* add vertical spacing */
+  }
+  nav ul li a {
+    font-size: 1.2em; /* increase font size on mobile */
+  }
+}
+
+/* Content container styling */
+.content {
+  max-width: 800px;   /* control the width of the content area */
+  margin: 0 auto;     /* center the container */
+  text-align: left;   /* ensure text is left-aligned */
+  padding: 20px;
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/**
+/* General body styling 
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation bar styling 
+nav {
+  background-color: #2c3e50;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #3498db;
+}
+
+/* Optional: Responsive navigation 
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -48,4 +136,4 @@ nav ul li a:focus {
     margin: 10px 0;
   }
 }
-
+**/

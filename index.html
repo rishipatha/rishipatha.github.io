@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <title>Rishipatha.org - Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
-<div id="nav-placeholder"></div>
-<script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    });
-</script>
+  <div id="nav-placeholder"></div>
 
-  <!-- Main Content -->
+  <!-- 1) Define the path to nav.html for root-level pages -->
+  <script>
+    const navPath = 'nav.html';
+  </script>
+
+  <!-- 2) Include your scripts.js -->
+  <script src="js/scripts.js"></script>
+
+  <!-- 3) Call loadNavigation() AFTER scripts.js is loaded -->
+  <script>
+    loadNavigation(navPath, 'nav-placeholder');
+  </script>
+
   <main>
     <h1>Welcome to Rishipatha.org</h1>
-    <p>
-      Rishipatha.org is a space dedicated to preserving, sharing, and exploring 
-      the wisdom of ancient Indian tradition across Ayurveda, Yoga, Science, 
-      Philosophy, Purushartha, and the many Stories that shaped civilizations. 
-      Explore our sections to learn more!
-    </p>
+    <p>This is the homepage content... tst</p>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Rishipatha.org</p>
   </footer>

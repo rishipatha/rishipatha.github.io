@@ -23,5 +23,31 @@
   </ul>
 </div>
 
+<div class="lang-switch">
+  <label class="switch">
+    <input type="checkbox" id="lang-checkbox">
+    <span class="slider round"></span>
+  </label>
+  <span id="lang-label">EN</span>
+</div>
+<script>
+  document.getElementById('lang-checkbox').addEventListener('change', function() {
+    if (this.checked) {
+      document.getElementById('en-content').style.display = 'none';
+      document.getElementById('hi-content').style.display = 'block';
+      document.getElementById('lang-label').textContent = 'HI';
+    } else {
+      document.getElementById('en-content').style.display = 'block';
+      document.getElementById('hi-content').style.display = 'none';
+      document.getElementById('lang-label').textContent = 'EN';
+    }
+  });
+  // प्रारंभिक स्थिति सेट करें
+  document.getElementById('lang-checkbox').checked = false;
+  document.getElementById('en-content').style.display = 'block';
+  document.getElementById('hi-content').style.display = 'none';
+  document.getElementById('lang-label').textContent = 'EN';
+</script>
+
 <!-- Overlay to cover the rest of the screen -->
 <div class="overlay" id="overlay"></div>

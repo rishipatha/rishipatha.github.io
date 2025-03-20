@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("nav.html")
+      fetch('nav.html')
       .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+        document.dispatchEvent(new CustomEvent('navLoaded'));
   
         // Attach event listeners for burger menu functionality
         const burger = document.getElementById('burger-menu');

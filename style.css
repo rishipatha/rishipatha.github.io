@@ -207,3 +207,24 @@ input:checked + .slider:before {
 #hi-content {
   font-family: 'HindiFont', sans-serif;
 }
+
+@font-face {
+  font-family: 'RomanFont';
+  src: url('siddhanta-variations/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  /* Add more formats like .woff if available for broader support */
+}
+
+#en-content {
+  font-family: 'RomanFont', sans-serif;
+}
+
+#disclaimer {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  font-size: 12px; /* small font size */
+  color: #000000;
+  font-family: inherit;
+}

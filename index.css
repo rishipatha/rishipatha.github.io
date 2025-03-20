@@ -2,11 +2,11 @@
 
 /* Styling for the introduction section */
 .intro {
-    margin-top: 40px;           /* Adds vertical space at the top */
+    margin-top: 30px;           /* Adds vertical space at the top */
     margin-bottom: 30px;        /* Space below the intro */
     padding: 20px;
-    background-color: #e8f4fa;  /* Soft background color for contrast */
-    border: 1px solid #b0c4de;  /* Light border for definition */
+    background-color: #ffffff;  /* Soft background color for contrast */
+    border: 1px solid #ffffff;  /* Light border for definition */
     border-radius: 8px;         /* Rounded corners */
     line-height: 1.6;
   }
@@ -15,8 +15,28 @@
     margin-bottom: 20px;        /* Space between paragraphs */
   }
   
-  /* Emphasize the introduction headings */
-  .intro strong {
-    color: #2c3e50;
+  #en-content {
+    font-size: 20px; /* Adjust this value as needed */
+
   }
+  .intro {
+    text-align: left;
+  }
+
+  .heading-hi {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;font-family: 'HindiFont';
+    src: url('siddhanta-variations/siddhanta-calcutta2.ttf') format('truetype');
+  }
+  
+  .heading-en {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;font-family: 'RomanfontFont';
+    src: url('siddhanta-variations/EBGaramond-VariableFont_wght.ttf') format('truetype');
+  }
+  
   

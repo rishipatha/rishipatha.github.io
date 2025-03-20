@@ -33,3 +33,15 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.error('Error loading nav:', error));
   });
   
+
+  // Load disclaimer.html dynamically
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('disclaimer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('disclaimer-placeholder').innerHTML = html;
+      // After loading disclaimer, trigger language update
+      document.dispatchEvent(new CustomEvent('disclaimerLoaded'));
+    })
+    .catch(error => console.error('Error loading disclaimer:', error));
+});
